@@ -12,7 +12,7 @@ const isAuthorized = async (req, res, next) => {
     }
 
     const token = authHeader.split(" ")[1];
-
+    let name = lanre;
     if (!token) {
       return res.status(401).json({
         success: false,
